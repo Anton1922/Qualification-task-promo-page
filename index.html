@@ -12,8 +12,8 @@
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
-  <link rel="stylesheet" type="text/scss" href="node_modules/slick-carousel/slick/slick.css"/>
-  <link rel="stylesheet" type="text/scss" href="node_modules/slick-carousel/slick/slick-theme.css"/>
+  <!-- <link rel="stylesheet" type="text/scss" href="node_modules/slick-carousel/slick/slick.css"/>
+  <link rel="stylesheet" type="text/scss" href="node_modules/slick-carousel/slick/slick-theme.css"/> -->
   <link rel="stylesheet" type="text/css" href="node_modules/tooltipster/dist/css/tooltipster.bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="node_modules/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -25,8 +25,18 @@
 </head>
 <body>
 
-  <div class="carousel">
-    <div class="block block__background-first">
+  <div>
+
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item" data-id="1"><a class="navigation__link" href="#b1"></a></li>
+        <li class="navigation__item" data-id="2"><a class="navigation__link" href="#b2"></a></li>
+        <li class="navigation__item" data-id="3"><a class="navigation__link" href="#b3"></a></li>
+      </ul>
+      
+    </nav>
+
+    <div class="block block__background-first" id="b1">
       <div class="wrapper">
 
         <header class="header">
@@ -43,7 +53,7 @@
 
           <form class="form">
             <div class="form__fieldset">
-              <input class="form__input" onclick="event.preventDefault()" type="text" name="">
+              <input class="form__input"  type="text" name="">
               <button class="form__button">Проверить</button>
             </div>
 
@@ -61,7 +71,7 @@
     
     </div>
 
-    <div class="block">
+    <div class="block" id="b2">
       <div class="wrapper">
         <header class="header">
           <svg class="header__logo header__logo__color" xmlns="http://www.w3.org/2000/svg" width="65" height="15" viewBox="0 0 65 15">
@@ -127,7 +137,7 @@
 
     </div>
 
-    <div class="block block__background-second">
+    <div class="block block__background-second" id="b3">
       <div class="wrapper">
         <header class="header">
           <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" width="65" height="15" viewBox="0 0 65 15">
@@ -162,7 +172,7 @@
 
 
   
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </body>
