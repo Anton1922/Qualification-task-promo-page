@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('form__button').click(function() {
+  $('.form__button').click(function() {
     $('.form__text, .form__link').show();
   });
 
