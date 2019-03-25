@@ -1,0 +1,45 @@
+.navigation {
+	position: fixed;
+	right: 5px;
+	padding-right: 2%;
+	width: 5%;
+	height: 100%;
+
+	@media screen and (min-width: $width-320) and (max-width: $width-599) {
+		display: none;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		margin: 0;
+		padding: 0;
+		height: 100%;
+	}
+
+	&__item {
+		list-style: none;
+	}
+
+	&__link {
+		display: block;
+		margin-bottom: 15px;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: $white;
+		border: 1px solid $black;
+	}
+
+  &__link:hover {
+      background-color: $black;
+      border: 1px solid $white;
+    }
+}
+
+.active {
+  background-color: $black;
+  border: 1px solid $white;
+}
