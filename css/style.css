@@ -358,6 +358,7 @@ BACKGROUNDIMAGES FOR ICONS
         height: 55px; } }
   .form__input {
     margin: 0 auto;
+    padding-left: 10px;
     width: 70%;
     height: 45px;
     border: none;
@@ -406,12 +407,16 @@ BACKGROUNDIMAGES FOR ICONS
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: space-between;
+    flex-direction: space-between;
     margin-bottom: 10px;
     width: 100%; }
   .form__text {
     display: none;
     margin: 0 auto;
-    width: 47%;
+    width: 45%;
     font-size: 16px;
     text-align: right;
     color: #f4f7fb; }
@@ -427,10 +432,16 @@ BACKGROUNDIMAGES FOR ICONS
   .form__link {
     display: none;
     margin: 0 auto;
-    width: 47%;
+    width: 45%;
     font-size: 16px;
     text-align: left;
     color: #77b53c; }
+    @media screen and (min-width: 600px) and (max-width: 858px) {
+      .form__link {
+        font-size: 14px; } }
+    @media screen and (min-width: 421px) and (max-width: 599px) {
+      .form__link {
+        font-size: 13px; } }
     @media screen and (min-width: 320px) and (max-width: 420px) {
       .form__link {
         font-size: 12px; } }

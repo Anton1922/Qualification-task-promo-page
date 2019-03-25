@@ -55,6 +55,7 @@
 *******/ 
 	&__input {
 		margin: 0 auto;
+		padding-left: 10px;
 		width: 70%;
 		height: 45px;
 		border: none;
@@ -122,6 +123,7 @@
 
 	&__container {
 		display: flex;
+    flex-direction: space-between;
     margin-bottom: 10px;
 		width: 100%;
 	}
@@ -129,7 +131,7 @@
 	&__text {
     display: none;
 		margin: 0 auto;
-		width: 47%;
+		width: 45%;
 		font-size: 16px;
 		text-align: right;
 		color: $white-dark;
@@ -150,10 +152,18 @@
 	&__link {
     display: none;
 		margin: 0 auto;
-		width: 47%;
+		width: 45%;
 		font-size: 16px;
 		text-align: left;
 		color: $green;
+
+    @media screen and (min-width: $width-600) and (max-width: $width-858) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: $width-421) and (max-width: $width-599) {
+      font-size: 13px;
+    }
 
     @media screen and (min-width: $width-320) and (max-width: $width-420) {
       font-size: 12px
